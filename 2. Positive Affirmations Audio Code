@@ -1,0 +1,11 @@
+<audio id="myAudio">
+<source src="https://www.mboxdrive.com/Historical%20Cash%20Register%20Open%20Ding%20-%20Sound%20Effect%20(HD).mp3" type="audio/mpeg">
+</audio>
+<button style="height: 100%; width: 100%; left: 0px; background-color: #ffffff00; border: none;" onclick="playAudio()" type="button"></button>
+
+<script>
+var x = document.getElementById("myAudio"); 
+function playAudio() { 
+  x.play(); 
+} 
+</script>
