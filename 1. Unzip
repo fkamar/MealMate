@@ -1,0 +1,11 @@
+function MealMate(){
+
+var url = "https://api.animaapp.com/rpc/get_form_entries?project_id=5ff9c2084f1f99f83dddbd82&t=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eSI6IjVmZjljMWNmYWYyYTcxMTI2NzczNmM0ZSIsImlhdCI6MTYxMDIwMzU5OSwibmJmIjoxNjEwMjAzNTk5LCJleHAiOjE2NDE3Mzk1OTl9.LY9-Lx2CwbnKc_c5bdgYzBqcuw4DqzGLYs37fshRN0M" 
+var zipblob = UrlFetchApp.fetch(url).getBlob(); 
+var unzipblob = Utilities.unzip(zipblob); 
+var unzipstr=unzipblob[0].getDataAsString();
+var csv = Utilities.parseCsv(unzipstr);
+
+var ss = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Sheet1');
+ss.getRange(1, 1, csv.length, csv[0].length).setValues(csv);
+}
