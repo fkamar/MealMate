@@ -1,5 +1,35 @@
+Button 1 Code:
+
 <audio id="myAudio">
-<source src="https://www.mboxdrive.com/Historical%20Cash%20Register%20Open%20Ding%20-%20Sound%20Effect%20(HD).mp3" type="audio/mpeg">
+<source src="https://www.mboxdrive.com/I%20am%20so%20proud.m4a" type="audio/mpeg">
+</audio>
+<button style="height: 100%; width: 100%; left: 0px; background-color: #ffffff00; border: none;" onclick="playAudio()" type="button"></button>
+
+<script>
+var x = document.getElementById("myAudio"); 
+function playAudio() { 
+  x.play(); 
+} 
+</script>
+
+Button 2 Code:
+
+<audio id="myAudio">
+<source src="https://www.mboxdrive.com/Im%20so%20happy.m4a" type="audio/mpeg">
+</audio>
+<button style="height: 100%; width: 100%; left: 0px; background-color: #ffffff00; border: none;" onclick="playAudio()" type="button"></button>
+
+<script>
+var x = document.getElementById("myAudio"); 
+function playAudio() { 
+  x.play(); 
+} 
+</script>
+
+Button 3 Code:
+
+<audio id="myAudio">
+<source src="https://www.mboxdrive.com/Let’s%20try.m4a" type="audio/mpeg">
 </audio>
 <button style="height: 100%; width: 100%; left: 0px; background-color: #ffffff00; border: none;" onclick="playAudio()" type="button"></button>
 
